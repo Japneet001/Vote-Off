@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Colors.css">
+  <link rel="stylesheet" href="BiggBoss.css">
+  <!-- <script>
+    function myFunction() {
+      alert("Thanks for voting!");
+      handleButtonClick();
+    }
+  </script> -->
+  <title>Bigg Boss</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: aliceblue;
+    }
+
+    .container2 {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      color: #0e4ab9;
+      font-size: 30px;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    .option {
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: aquamarine;
+      border-radius: 8px;
+    }
+
+    canvas {
+      margin-top: 20px;
+      margin-left: 40px;
+      max-width: 1000px;
+    }
+
+    #chart {
+      max-width: 1000px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <header class="header" id="top">
+      <div class="w3-top">
+        <div class="w3-bar w3-black w3-card header">
+          <a href="#top" class="w3-bar-item w3-button w3-padding-large ">Vote-Off</a>
+          <span class="w3-right">
+            <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Home</a>
+            <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
+            <a href="result.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Result</a>
+            <a href="#profile" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Profile</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+          </span>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="background">
+    <div class="About">
+      <h1>ABOUT</h1>
+      <p>Bigg Boss is an Indian reality show franchise based on the Dutch reality show Big Brother. It is produced
+        by Endemol Shine India through Viacom18 and Disney Star.Big Brother is a reality television show in
+        which a group of people live together in a large house, isolated from the outside world but continuously
+        watched by television cameras. Each series lasts for around three months, and there are 10-17
+        participants. The housemates try to win a cash prize by avoiding periodic evictions from the house. </p>
+    </div>
+    <div class="flex">
+      <div class="container">
+        <div class="card">
+          <div class="img-box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP8KAjsacisPRwODdhCOnqPoJTTlLxGeVx0dvcm0oXTEIuWvv5" />
+          </div>
+          <div class="content">
+            <h2>Sehnaaz Gill</h2>
+            <p class="text">An Indian actress, model and singer who works in Punjabi and Hindi television and films. She
+              began her modelling career with the 2015 music video Shiv Di Kitaab.</p>
+            <!-- <input class="btn" type="button" value="Vote"> -->
+            <!-- <button id="incrementBtn1" onclick="handleButtonClick()" onclick="myFunction()">Vote</button> -->
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="img-box">
+            <img
+              src="https://scontent.fixc1-5.fna.fbcdn.net/v/t1.6435-9/165121278_294507785368492_5939304613588997506_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=y3tTLRgJn3wAX-xAnHL&_nc_ht=scontent.fixc1-5.fna&oh=00_AfAuqtaycbBj9sSvaS_yvBQk-d1uGMpZchCviZZGx9W_wQ&oe=646C42E1" />
+          </div>
+          <div class="content">
+            <h2>Siddarth Shukla</h2>
+            <p class="text">An Indian actor, host and model who appeared in Hindi television and films. He was known for
+              his roles in Balika Vadhu, Broken But Beautiful 3 and Dil Se Dil Tak.</p>
+            <!-- <input class="btn" type="button" value="Vote"> -->
+            <!-- <button onclick="myFunction()">Vote</button> -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-box">
+            <img
+              src="https://scontent.fbom3-2.fna.fbcdn.net/v/t1.6435-9/120758702_196944638455225_5682649217811473578_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zMhzI1jjwqcAX8Aps6q&_nc_ht=scontent.fbom3-2.fna&oh=00_AfBn6iUoUYip5XOFSwaUe-YcXpAFSF27dTa0cDyzKvcSnw&oe=646EECE9" />
+          </div>
+          <div class="content">
+            <h2>Mahira Sharma</h2>
+            <p class="text">Mahira Sharma is a popular Indian model, film and television actress who has acted in Hindi
+              language films and TV serials. She has also appeared in Hindi language reality shows.</p>
+            <!-- <input class="btn" type="button" value="Vote"> -->
+            <!-- <button onclick="myFunction()">Vote</button> -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-box">
+            <img src="https://images.news18.com/ibnlive/uploads/2022/07/paras-chhabra.jpg" />
+          </div>
+          <div class="content">
+            <h2>Paras Chhabra</h2>
+            <p class="text">An Indian model, actor and reality television personality. He is known for winning MTV
+              Splitsvilla 5.</p>
+            <!-- <input class="btn" type="button" value="Vote"> -->
+            <!-- <button onclick="myFunction()">Vote</button> -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-box">
+            <img
+              src="https://scontent.fixc1-5.fna.fbcdn.net/v/t39.30808-6/306920119_694261272068080_6539648224327695596_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=QauuZAxJ6MoAX8vSAkE&_nc_ht=scontent.fixc1-5.fna&oh=00_AfAEKSk8_lK9cDC7TgaTFWNxqIxMJvO1Oe-sU39wIbfckQ&oe=646E1C17" />
+          </div>
+          <div class="content">
+            <h2>Devoleena Bhattacharjee</h2>
+            <p class="text">She is a Bharatanatyam dancer and television actress from India who is well known for her
+              work in Hindi TV series.</p>
+            <!-- <input class="btn" type="button" value="Vote"> -->
+            <!-- <button onclick="myFunction()">Vote</button> -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-box">
+            <img
+              src="https://scontent.fixc1-4.fna.fbcdn.net/v/t39.30808-6/334261152_5984282668315195_5584666286909956894_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=3qmrnn2b41YAX8SJywQ&_nc_ht=scontent.fixc1-4.fna&oh=00_AfC4SL8GMukhNDj0LJ2gTc1lYTrFktFqJ3reuYu0sjEPAQ&oe=646F253B" />
+          </div>
+          <div class="content">
+            <h2>Aism Riaz</h2>
+            <p class="text">Asim Riaz is an Indian model, actor, rapper and fitness specialist.He is known for being the
+              face of BlackBerry, Numero Uno, and B’lue. </p>
+            <!-- <input class="btn" type="button" value="Vote"> -->
+            <!-- <button onclick="myFunction()">Vote</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container2">
+      <h2>Vote for Your Favorite Contestant</h2>
+
+      <div class="options">
+        <div class="option">
+          <label>
+            <input type="radio" name="vote" value="Sehnaaz_Gill"> Sehnaaz Gill
+          </label>
+        </div>
+
+        <div class="option">
+          <label>
+            <input type="radio" name="vote" value="Siddarth_Shukla"> Siddarth Shukla
+          </label>
+        </div>
+
+        <div class="option">
+          <label>
+            <input type="radio" name="vote" value="Mahira_Sharma"> Mahira Sharma
+          </label>
+        </div>
+
+        <div class="option">
+          <label>
+            <input type="radio" name="vote" value="Paras_Chhabra"> Paras Chhabra
+          </label>
+        </div>
+
+        <div class="option">
+          <label>
+            <input type="radio" name="vote" value="Devoleena_Bhattacharjee"> Devoleena Bhattacha
+          </label>
+        </div>
+
+        <div class="option">
+          <label>
+            <input type="radio" name="vote" value="Aism_Riaz"> Aism Riaz
+          </label>
+        </div>
+      </div>
+
+      <button onclick="submitVote()">Submit Vote</button>
+
+      <canvas id="chart" width="1000" height="500"></canvas>
+    </div>
+
+    <script>
+      // JavaScript code
+      var votes = {
+        Sehnaaz_Gill: 0,
+        Siddarth_Shukla: 0,
+        Mahira_Sharma: 0,
+        Paras_Chhabra: 0,
+        Devoleena_Bhattacharjee: 0,
+        Aism_Riaz: 0
+      };
+
+      function submitVote() {
+        var options = document.getElementsByName('vote');
+        var selectedOption;
+
+        // Find the selected option
+        for (var i = 0; i < options.length; i++) {
+          if (options[i].checked) {
+            selectedOption = options[i].value;
+            break;
+          }
+        }
+
+        if (selectedOption) {
+          // Increment the vote count
+          votes[selectedOption]++;
+
+          // Display updated results as a bar graph
+          displayResults();
+        } else {
+          alert('Please select an option before submitting.');
+        }
+      }
+
+      function displayResults() {
+        var chartCanvas = document.getElementById('chart');
+        var ctx = chartCanvas.getContext('2d');
+
+        // Clear the canvas
+        ctx.clearRect(0, 0, chartCanvas.width, chartCanvas.height);
+
+        // Set bar graph properties
+        var barWidth = 100;
+        var barSpacing = 30;
+        var x = 0;
+        var maxVotes = Math.max(...Object.values(votes));
+
+        // Draw bars based on updated vote counts
+        for (var option in votes) {
+          var barHeight = (votes[option] / maxVotes) * (chartCanvas.height - 40);
+          var barX = x * (barWidth + barSpacing);
+          var barY = chartCanvas.height - barHeight;
+
+          ctx.fillStyle = 'skyblue';
+          ctx.fillRect(barX, barY, barWidth, barHeight);
+
+          ctx.fillStyle = 'black';
+          ctx.fillText(votes[option], barX, barY - 20);
+          ctx.fillText(option, barX, chartCanvas.height - 5);
+
+          x++;
+        }
+      }
+    </script>
+  </div>
+
+</body>
+
+</html>

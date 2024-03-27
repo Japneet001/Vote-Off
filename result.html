@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Result</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="result.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+  <div>
+    <header class="header" id="top">
+      <div class="w3-top">
+        <div class="w3-bar w3-black w3-card header">
+          <a href="#top" class="w3-bar-item w3-button w3-padding-large ">Vote-Off</a>
+          <span class="w3-right">
+            <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Home</a>
+            <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
+            <a href="result.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Result</a>
+            <a href="#profile" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Profile</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+          </span>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <section class="hero w3-padding-large w3-container">
+    <h1 style="display: inline;"><span><i class="fa fa-check-square-o"></i></span>Viewers' ballots reveal star destiny!
+    </h1>
+    <p>Unveiling hopes, dreams, and winners</p>
+    <a href="#contact" class="w3-padding-large w3-round">Show Results</a>
+  </section>
+  <section class="contact w3-container contact" id="contact">
+    <main>
+      <div id="myChart" style="width:100%; max-width:700px; height:500px;"></div>
+
+      <script>
+        // Counter variables for each contestant
+        let counter1 = 0;
+        let counter2 = 0;
+        let counter3 = 0;
+        let counter4 = 0;
+        let counter5 = 0;
+
+        // Function to update the bar graph based on the counter values
+        function updateGraph() {
+          const bar1 = document.getElementById('bar1');
+          const bar2 = document.getElementById('bar2');
+          const bar3 = document.getElementById('bar3');
+          const bar4 = document.getElementById('bar4');
+          const bar5 = document.getElementById('bar5');
+
+          bar1.style.height = counter1 + 'em';
+          bar2.style.height = counter2 + 'em';
+          bar3.style.height = counter3 + 'em';
+          bar4.style.height = counter4 + 'em';
+          bar5.style.height = counter5 + 'em';
+        }
+
+        // Function to handle button click
+        function handleButtonClick() {
+          // Increment the respective counter based on the clicked button's ID
+          switch (event.target.id) {
+            case 'incrementBtn1':
+              counter1++;
+              break;
+            case 'incrementBtn2':
+              counter2++;
+              break;
+            case 'incrementBtn3':
+              counter3++;
+              break;
+            case 'incrementBtn4':
+              counter4++;
+              break;
+            case 'incrementBtn5':
+              counter5++;
+              break;
+          }
+
+          // Update the bar graph
+          updateGraph();
+        }
+
+        // Attach event listener to the increment buttons
+        document.getElementById('incrementBtn1').addEventListener('click', handleButtonClick);
+        document.getElementById('incrementBtn2').addEventListener('click', handleButtonClick);
+        document.getElementById('incrementBtn3').addEventListener('click', handleButtonClick);
+        document.getElementById('incrementBtn4').addEventListener('click', handleButtonClick);
+        document.getElementById('incrementBtn5').addEventListener('click', handleButtonClick);
+
+      </script>
+    </main>
+
+  </section>
+
+  <script async>
+    const backToTop = document.getElementById("back-to-top");
+
+    function toggleMobileNavigation() {
+      const mobileNavigation = document.getElementById("mobile-sidenav");
+      mobileNavigation.classList.toggle('mobile-links-active');
+    }
+
+    function goToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    function scroll() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) backToTop.style.display = "block";
+      else backToTop.style.display = "none";
+    }
+
+    window.onscroll = function () { scroll() };
+  </script>
+</body>
+
+</html>
